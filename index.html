@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイセカイ 家具一覧</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="data.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>マイセカイ 家具一覧</h1>
+
+    <!-- 検索欄 -->
+    <input type="text" id="searchInput" placeholder="家具名で検索">
+
+    <!-- 絞り込みボタン -->
+    <button onclick="toggleTagFilter()">絞り込み</button>
+
+    <!-- タグ選択リスト -->
+    <div id="tagFilter" class="hidden">
+        <h3>タグで絞り込み</h3>
+        <div class="tag-list" id="tagList"></div>
+        <button onclick="applyTagFilter()">絞り込む</button>
+    </div>
+
+    <!-- 家具一覧表 -->
+    <table id="furnitureTable">
+        <thead>
+            <tr>
+                <th>家具名</th>
+                <th>サイズ</th>
+                <th>カテゴリ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 動的に挿入される行 -->
+        </tbody>
+    </table>
+
+    <!-- 家具詳細表示ポップアップ -->
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3 id="popupName"></h3>
+            <img id="popupImage" src="" alt="家具画像" style="max-width: 200px;">
+            <p id="popupTags"></p>
+        </div>
+    </div>
+</body>
+</html>

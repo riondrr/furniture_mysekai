@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* タグのスタイル */
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0; /* 背景色 */
+    color: #333; /* 文字色 */
+    padding: 5px 10px; /* パディング */
+    margin-right: 5px; /* タグの間隔 */
+    margin-bottom: 5px; /* タグの間隔 */
+    border-radius: 5px; /* 角を少し丸く */
+    font-size: 14px; /* 文字のサイズ */
+    border: 1px solid #ccc; /* ボーダー */
+}
+
+
+#tagFilter {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
