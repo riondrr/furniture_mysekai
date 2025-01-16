@@ -32,7 +32,7 @@ function showPopup(name) {
         popupImage.src = item.image;
 
         // タグを個別に四角で囲む
-        const tagElements = item.tags.map(tag => `<span class="tag">${tag}</span>`).join(", ");
+        const tagElements = item.tags.map(tag => `<span class="tag">${tag}</span>`).join(" ");
         popupTags.innerHTML = `タグ: ${tagElements}`;
 
         popup.classList.remove("hidden");
@@ -72,14 +72,20 @@ function applyTagFilter() {
     const selectedTags = Array.from(tagList.querySelectorAll("input:checked")).map(input => input.value);
     activeTags = selectedTags;
 
-    // series のキーを furnitureData の tags に対応付ける
-    const filteredData = furnitureData.filter(item => 
-        selectedTags.some(tag => item.tags.includes(getSer(tag))) // getSerを使ってタグをマッチさせる
-    );
+    let filteredData;
+    if (selectedTags.length === 0) {     // タグが選択されていない場合、全ての家具を表示
+        filteredData = furnitureData;
+    } else {
+        // series のキーを furnitureData の tags に対応付ける
+        filteredData = furnitureData.filter(item => 
+            selectedTags.some(tag => item.tags.includes(getSer(tag))) // getSerを使ってタグをマッチさせる
+        );
+    }
 
     renderFurniture(filteredData);
     tagFilter.classList.add("hidden");
 }
+
 
 // 初期表示
 renderFurniture(furnitureData);
