@@ -42,8 +42,40 @@ const characters = ["","星乃一歌","天馬咲希","望月穂波","日野森�
 
 // 家具データ
 const furnitureData = [
-
+//タグを押したらそのタグを検索欄に入れる
 //一般///////////////////////////////////////////////////////////
+
+    {
+        name: "きらめく流星のチェスト",
+        size: "2x2",
+        category: categories[0],
+        tags: ["きらめく流星のチェスト", units[1], getSer("ln")],
+        image: ""
+    },
+
+    {
+        name: "きらめく流星のベッド",
+        size: "4x6",
+        category: categories[0],
+        tags: ["きらめく流星のベッド", units[1], getSer("ln")],
+        image: ""
+    },
+
+    {
+        name: "きらめく流星のテーブル",
+        size: "2x2",
+        category: categories[0],
+        tags: ["きらめく流星のテーブル", units[1], getSer("ln")],
+        image: ""
+    },
+
+    {
+        name: "きらめく流星のチェア",
+        size: "2x2",
+        category: categories[0],
+        tags: ["きらめく流星のチェア", units[1], getSer("ln")],
+        image: ""
+    },
 
     {
         name: "きらめく流星の本棚",
@@ -54,35 +86,107 @@ const furnitureData = [
     },
 
     {
-        name: "きらめく流星のテーブル(仮)",
+        name: "きらめく流星のローテーブル",
         size: "2x2",
         category: categories[0],
-        tags: ["ひび割れたハートのテーブル", units[1], getSer("ln")],
+        tags: ["きらめく流星のローテーブル", units[1], getSer("ln")],
         image: ""
     },
 
     {
-        name: "かがやくクローバーの本棚(仮)",
-        size: "3x2",
+        name: "きらめく流星のソファ",
+        size: "4x2",
         category: categories[0],
-        tags: ["かがやくクローバーの本棚", units[2], getSer("mmj")],
-        image: "image.png"
+        tags: ["きらめく流星のソファ", units[1], getSer("ln")],
+        image: ""
     },
 
     {
-        name: "かがやくクローバーのテーブル(仮)",
+        name: "きらめく流星のシェルフ",
         size: "2x2",
         category: categories[0],
-        tags: ["かがやくクローバーのテーブル", units[2], getSer("mmj")],
+        tags: ["きらめく流星のシェルフ", units[1], getSer("ln")],
+        image: ""
+    },
+
+    {
+        name: "かがやくクローバーのチェスト",
+        size: "2x2",
+        category: categories[0],
+        tags: ["かがやくクローバーのチェスト",units[2], getSer("mmj")],
+        image: ""
+    },
+
+    {
+        name: "かがやくクローバーのベッド",
+        size: "4x6",
+        category: categories[0],
+        tags: ["かがやくクローバーのベッド",units[2], getSer("mmj")],
+        image: ""
+    },
+
+    {
+        name: "かがやくクローバーのテーブル",
+        size: "2x2",
+        category: categories[0],
+        tags: ["かがやくクローバーのテーブル",units[2], getSer("mmj")],
+        image: ""
+    },
+
+    {
+        name: "かがやくクローバーのチェア",
+        size: "2x2",
+        category: categories[0],
+        tags: ["かがやくクローバーのチェア", units[2], getSer("mmj")],
+        image: ""
+    },
+
+    {
+        name: "かがやくクローバーの本棚",
+        size: "3x2",
+        category: categories[0],
+        tags: ["かがやくクローバーの本棚",units[2], getSer("mmj")],
         image: "image.png"
     },
 
     {
-        name: "鮮やかなユニゾンの本棚(仮)",
-        size: "3x2",
+        name: "かがやくクローバーのローテーブル",
+        size: "2x2",
         category: categories[0],
-        tags: ["鮮やかなユニゾンの本棚", units[3], getSer("vbs")],
-        image: "image.png"
+        tags: ["かがやくクローバーのローテーブル", units[2], getSer("mmj")],
+        image: ""
+    },
+
+    {
+        name: "かがやくクローバーのソファ",
+        size: "4x2",
+        category: categories[0],
+        tags: ["かがやくクローバーのソファ", units[2], getSer("mmj")],
+        image: ""
+    },
+
+    {
+        name: "かがやくクローバーのシェルフ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["かがやくクローバーのシェルフ", units[2], getSer("mmj")],
+        image: ""
+    },
+    
+    {
+        name: "鮮やかなユニゾンのチェスト",
+        size: "2x2",
+        category: categories[0],
+        tags: ["鮮やかなユニゾンのチェスト", units[3], getSer("vbs")],
+        image: ""
+    },
+
+    {
+        name: "鮮やかなユニゾンのベッド",
+        size: "4x6",
+        category: categories[0],
+        tags: ["鮮やかなユニゾンのベッド", units[3], getSer("vbs")],
+        image: ""
     },
 
     {
@@ -94,15 +198,63 @@ const furnitureData = [
     },
 
     {
-        name: "はじけるクラウンの本棚(仮)",
+        name: "鮮やかなユニゾンのチェア",
+        size: "2x2",
+        category: categories[0],
+        tags: ["鮮やかなユニゾンのチェア", units[3], getSer("vbs")],
+        image: ""
+    },
+
+    {
+        name: "鮮やかなユニゾンの本棚",
         size: "3x2",
         category: categories[0],
-        tags: ["はじけるクラウンの本棚", units[4], getSer("wxs")],
+        tags: ["鮮やかなユニゾンの本棚", units[3], getSer("vbs")],
         image: "image.png"
     },
 
     {
-        name: "きらめく流星のテーブル(仮)",
+        name: "鮮やかなユニゾンのローテーブル",
+        size: "2x2",
+        category: categories[0],
+        tags: ["鮮やかなユニゾンのローテーブル", units[3], getSer("vbs")],
+        image: ""
+    },
+
+    {
+        name: "鮮やかなユニゾンのソファ",
+        size: "4x2",
+        category: categories[0],
+        tags: ["鮮やかなユニゾンのソファ", units[3], getSer("vbs")],
+        image: ""
+    },
+
+    {
+        name: "鮮やかなユニゾンのシェルフ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["鮮やかなユニゾンのシェルフ", units[3], getSer("vbs")],
+        image: ""
+    },
+
+    {
+        name: "はじけるクラウンのチェスト",
+        size: "2x2",
+        category: categories[0],
+        tags: ["はじけるクラウンのチェスト", units[4], getSer("wxs")],
+        image: ""
+    },
+
+    {
+        name: "はじけるクラウンのベッド",
+        size: "4x6",
+        category: categories[0],
+        tags: ["はじけるクラウンのベッド", units[4], getSer("wxs")],
+        image: ""
+    },
+
+    {
+        name: "はじけるクラウンのテーブル",
         size: "2x2",
         category: categories[0],
         tags: ["はじけるクラウンのテーブル", units[4], getSer("wxs")],
@@ -110,11 +262,59 @@ const furnitureData = [
     },
 
     {
-        name: "ひび割れたハートの本棚(仮)",
+        name: "はじけるクラウンのチェア",
+        size: "2x2",
+        category: categories[0],
+        tags: ["はじけるクラウンのチェア", units[4], getSer("wxs")],
+        image: ""
+    },
+
+    {
+        name: "はじけるクラウンの本棚",
         size: "3x2",
         category: categories[0],
-        tags: ["ひび割れたハートの本棚", units[5], getSer("ng")],
+        tags: ["はじけるクラウンの本棚", units[4], getSer("wxs")],
         image: "image.png"
+    },
+
+    {
+        name: "はじけるクラウンのローテーブル",
+        size: "2x2",
+        category: categories[0],
+        tags: ["はじけるクラウンのローテーブル", units[4], getSer("wxs")],
+        image: ""
+    },
+
+    {
+        name: "はじけるクラウンのソファ",
+        size: "4x2",
+        category: categories[0],
+        tags: ["はじけるクラウンのソファ", units[4], getSer("wxs")],
+        image: ""
+    },
+
+    {
+        name: "はじけるクラウンのシェルフ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["はじけるクラウンのシェルフ", units[4], getSer("wxs")],
+        image: ""
+    },
+  
+    {
+        name: "ひび割れたハートのチェスト",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ひび割れたハートのチェスト", units[5], getSer("ng")],
+        image: ""
+    },
+
+    {
+        name: "ひび割れたハートのベッド",
+        size: "4x6",
+        category: categories[0],
+        tags: ["ひび割れたハートのベッド", units[5], getSer("ng")],
+        image: ""
     },
 
     {
@@ -122,6 +322,78 @@ const furnitureData = [
         size: "2x2",
         category: categories[0],
         tags: ["ひび割れたハートのテーブル", units[5], getSer("ng")],
+        image: ""
+    },
+
+    {
+        name: "ひび割れたハートのチェア",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ひび割れたハートのチェア", units[5], getSer("ng")],
+        image: ""
+    },
+
+    {
+        name: "ひび割れたハートの本棚",
+        size: "3x2",
+        category: categories[0],
+        tags: ["ひび割れたハートの本棚", units[5], getSer("ng")],
+        image: "image.png"
+    },
+
+    {
+        name: "ひび割れたハートのローテーブル",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ひび割れたハートのローテーブル", units[5], getSer("ng")],
+        image: ""
+    },
+
+    {
+        name: "ひび割れたハートのソファ",
+        size: "4x2",
+        category: categories[0],
+        tags: ["ひび割れたハートのソファ", units[5], getSer("ng")],
+        image: ""
+    },
+
+    {
+        name: "ひび割れたハートのシェルフ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ひび割れたハートのシェルフ", units[5], getSer("ng")],
+        image: ""
+    },
+
+    {
+        name: "はじまりのメロディのチェスト",
+        size: "2x2",
+        category: categories[0],
+        tags: ["はじまりのメロディ", units[0], getSer("vs")],
+        image: ""
+    },
+
+    {
+        name: "はじまりのメロディのベッド",
+        size: "4x6",
+        category: categories[0],
+        tags: ["はじまりのメロディのベッド", units[0], getSer("vs")],
+        image: ""
+    },
+
+    {
+        name: "はじまりのメロディのテーブル",
+        size: "2x2",
+        category: categories[0],
+        tags: ["はじまりのメロディのテーブル", units[0], getSer("vs")],
+        image: ""
+    },
+
+    {
+        name: "はじまりのメロディのチェア",
+        size: "2x2",
+        category: categories[0],
+        tags: ["はじまりのメロディのチェア", units[0], getSer("vs")],
         image: ""
     },
 
@@ -134,10 +406,26 @@ const furnitureData = [
     },
 
     {
-        name: "はじまりのメロディのテーブル",
+        name: "はじまりのメロディのローテーブル",
         size: "2x2",
         category: categories[0],
-        tags: ["はじまりのメロディのテーブル", units[0], getSer("vs")],
+        tags: ["はじまりのメロディのローテーブル", units[0], getSer("vs")],
+        image: ""
+    },
+
+    {
+        name: "はじまりのメロディのソファ",
+        size: "4x2",
+        category: categories[0],
+        tags: ["はじまりのメロディのソファ", units[0], getSer("vs")],
+        image: ""
+    },
+
+    {
+        name: "はじまりのメロディのシェルフ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["はじまりのメロディのシェルフ", units[0], getSer("vs")],
         image: ""
     },
 
@@ -250,6 +538,14 @@ const furnitureData = [
         size: "4x2",
         category: categories[0],
         tags: ["ナチュラルなローテーブル",getSer("Natural")],
+        image: ""
+    },
+
+    {
+        name: "ナチュラルな1人掛けソファ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ナチュラルな1人掛けソファ",getSer("Natural")],
         image: ""
     },
 
@@ -406,10 +702,34 @@ const furnitureData = [
     },
 
     {
+        name: "和風の素朴なちゃぶ台",
+        size: "2x2",
+        category: categories[0],
+        tags: ["和風の素朴なちゃぶ台",getSer("Japanese")],
+        image: ""
+    },
+
+    {
+        name: "和風の素朴な布団",
+        size: "4x5",
+        category: categories[0],
+        tags: ["和風の素朴な布団",getSer("Japanese")],
+        image: ""
+    },
+
+    {
         name: "和風の素朴な黒電話",
         size: "1x2",
         category: categories[0],
         tags: ["和風の素朴な黒電話",getSer("Japanese")],
+        image: ""
+    },
+
+    {
+        name: "キッズルームのテーブル",
+        size: "4x2",
+        category: categories[0],
+        tags: ["キッズルームのテーブル",getSer("Kids")],
         image: ""
     },
 
@@ -438,6 +758,22 @@ const furnitureData = [
     },
 
     {
+        name: "カジュアルな学習机",
+        size: "4x3",
+        category: categories[0],
+        tags: ["カジュアルな学習机", getSer("Casual")],
+        image: "image.png"
+    },
+
+    {
+        name: "カジュアルなベッド",
+        size: "4x6",
+        category: categories[0],
+        tags: ["カジュアルなベッド",getSer("Casual")],
+        image: ""
+    },
+
+    {
         name: "キュートなチェスト",
         size: "2x2",
         category: categories[0],
@@ -446,8 +782,32 @@ const furnitureData = [
     },
 
     {
+        name: "キュートなベッド",
+        size: "4x6",
+        category: categories[0],
+        tags: ["キュートなベッド",getSer("Cute")],
+        image: ""
+    },
+
+    {
+        name: "キュートなローテーブル",
+        size: "2x2",
+        category: categories[0],
+        tags: ["キュートなローテーブル",getSer("Cute")],
+        image: ""
+    },
+
+    {
+        name: "フレンチスタイルのラウンドテーブル",
+        size: "4x4",
+        category: categories[0],
+        tags: ["フレンチスタイルのラウンドテーブル",getSer("French")],
+        image: ""
+    },
+
+    {
         name: "フレンチスタイルのベッド",
-        size: "4x2",
+        size: "4x6",
         category: categories[0],
         tags: ["フレンチスタイルのベッド",getSer("French")],
         image: ""
@@ -462,10 +822,34 @@ const furnitureData = [
     },
 
     {
+        name: "フレンチスタイルのシェルフ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["フレンチスタイルのシェルフ",getSer("French")],
+        image: ""
+    },
+
+    {
+        name: "2人用ランニングマシン",
+        size: "6x4",
+        category: categories[0],
+        tags: ["2人用ランニングマシン",getSer("Training")],
+        image: ""
+    },
+
+    {
         name: "折りたたみ会議テーブル",
         size: "4x2",
         category: categories[0],
         tags: ["折りたたみ会議テーブル",getSer("Event")],
+        image: ""
+    },
+
+    {
+        name: "プリシ",
+        size: "11x6",
+        category: categories[0],
+        tags: ["プリシ",getSer("Game")],
         image: ""
     },
 
@@ -478,26 +862,26 @@ const furnitureData = [
     },
 
     {
+        name: "天文学者の研究室の天蓋つきベッド",
+        size: "4x7",
+        category: categories[0],
+        tags: ["天文学者の研究室の天蓋つきベッド",getSer("Astronomer")],
+        image: ""
+    },
+
+    {
+        name: "天文学者の研究室の机",
+        size: "4x2",
+        category: categories[0],
+        tags: ["天文学者の研究室の机",getSer("Astronomer")],
+        image: ""
+    },
+
+    {
         name: "天文学者の研究室の天体望遠鏡",
         size: "2x3",
         category: categories[0],
         tags: ["天文学者の研究室の天体望遠鏡",getSer("Astronomer")],
-        image: ""
-    },
-
-    {
-        name: "月が見える旅館の座卓",
-        size: "4x2",
-        category: categories[0],
-        tags: ["月が見える旅館の座卓",getSer("Moon")],
-        image: ""
-    },
-
-    {
-        name: "旅人のキャンプのアウトドアボックス",
-        size: "3x1",
-        category: categories[0],
-        tags: ["旅人のキャンプのアウトドアボックス",getSer("Camp")],
         image: ""
     },
 
@@ -565,7 +949,47 @@ const furnitureData = [
         image: "image.png"
     },
 
+    {
+        name: "月が見える旅館の座卓",
+        size: "4x2",
+        category: categories[0],
+        tags: ["月が見える旅館の座卓",getSer("Moon")],
+        image: ""
+    },
+
+    {
+        name: "月が見える旅館の布団",
+        size: "4x5",
+        category: categories[0],
+        tags: ["月が見える旅館の布団",getSer("Moon")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプのアウトドアテーブル",
+        size: "4x2",
+        category: categories[0],
+        tags: ["旅人のキャンプのアウトドアテーブル",getSer("Camp")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプのアウトドアボックス",
+        size: "3x1",
+        category: categories[0],
+        tags: ["旅人のキャンプのアウトドアボックス",getSer("Camp")],
+        image: ""
+    },
+
 //小物///////////////////////////////////////////////////////////
+
+{
+    name: "革のシステム手帳",
+    size: "1x1",
+    category: categories[1],
+    tags: ["革のシステム手帳", "マイセカイ情報"],
+    image: "image.png"
+},
 
 {
     name: "レコードプレーヤー",
@@ -580,6 +1004,22 @@ const furnitureData = [
     size: "2x2",
     category: categories[1],
     tags: ["シンプルなノートパソコン", "ひみつのおみせ"],
+    image: "image.png"
+},
+
+{
+    name: "ポップアップトースター",
+    size: "1x1",
+    category: categories[1],
+    tags: ["ポップアップトースター", getSer("Simple")],
+    image: "image.png"
+},
+
+{
+    name: "カジュアルなRCカー",
+    size: "2x2",
+    category: categories[1],
+    tags: ["カジュアルなRCカー", getSer("Casual")],
     image: "image.png"
 },
 
@@ -647,6 +1087,14 @@ const furnitureData = [
     image: "image.png"
 },
 
+{
+    name: "ぽかぽかなピクニックのツリー",
+    size: "4x4",
+    category: categories[1],
+    tags: ["ぽかぽかなピクニックのツリー", getSer("Picnic")],
+    image: "image.png"
+},
+
 //壁掛け///////////////////////////////////////////////////////////
 
     {
@@ -654,6 +1102,14 @@ const furnitureData = [
         size: "2x4",
         category: categories[2],
         tags: ["きらめく流星の窓",units[1], getSer("ln")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "きらめく流星の壁掛け時計",
+        size: "2x2",
+        category: categories[2],
+        tags: ["きらめく流星の壁掛け時計",units[1], getSer("ln")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -682,6 +1138,14 @@ const furnitureData = [
     },
 
     {
+        name: "鮮やかなユニゾンの壁掛け時計(仮)",
+        size: "2x2",
+        category: categories[2],
+        tags: ["鮮やかなユニゾンの壁掛け時計",units[3], getSer("vbs")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
         name: "はじけるクラウンの窓(仮)",
         size: "2x4",
         category: categories[2],
@@ -690,10 +1154,26 @@ const furnitureData = [
     },
 
     {
+        name: "はじけるクラウンの壁掛け時計(仮)",
+        size: "2x2",
+        category: categories[2],
+        tags: ["はじけるクラウンの壁掛け時計",units[4], getSer("wxs")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
         name: "ひび割れたハートの窓(仮)",
         size: "2x4",
         category: categories[2],
         tags: ["ひび割れたハートの窓(仮)",units[5], getSer("ng")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "ひび割れたハートの壁掛け時計(仮)",
+        size: "2x2",
+        category: categories[2],
+        tags: ["ひび割れたハートの壁掛け時計",units[5], getSer("ng")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -852,6 +1332,38 @@ const furnitureData = [
     },
 
 //ぬいぐるみ///////////////////////////////////////////////////////////
+
+    {
+        name: "キッズルームのぞうのぬいぐるみ",
+        size: "1x1",
+        category: categories[4],
+        tags: ["キッズルームのぞうのぬいぐるみ",getSer("Kids")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "カジュアルなビーグル犬のぬいぐるみ",
+        size: "1x1",
+        category: categories[4],
+        tags: ["カジュアルなビーグル犬のぬいぐるみ",getSer("Casual")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "キュートなうさぎのぬいぐるみ",
+        size: "1x1",
+        category: categories[4],
+        tags: ["キュートなうさぎのぬいぐるみ",getSer("Cute")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "フレンチスタイルのくまのぬいぐるみ",
+        size: "2x2",
+        category: categories[4],
+        tags: ["フレンチスタイルのくまのぬいぐるみ",getSer("French")],
+        image: "images/kagayaku_clover_clock.png"
+    },
 
     {
         name: "一歌のぬいぐるみ/S",
@@ -1603,6 +2115,14 @@ const furnitureData = [
         image: "images/kagayaku_clover_clock.png"
     },
 
+    {
+        name: "月が見える旅館の畳",
+        size: "-",
+        category: categories[7],
+        tags: ["月が見える旅館の畳",getSer("Moon")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
 //ラグ///////////////////////////////////////////////////////////
 
     {
@@ -1664,7 +2184,23 @@ const furnitureData = [
 //家///////////////////////////////////////////////////////////
 
     {
-        name: "きらめく流星の家(仮)",
+        name: "和風の素朴な家",
+        size: "12x12",
+        category: categories[9],
+        tags: ["和風の素朴な家",getSer("Japanese")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "ぽかぽかなピクニックの家",
+        size: "12x12",
+        category: categories[9],
+        tags: ["ぽかぽかなピクニックの家",getSer("Picnic")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "きらめく流星の家",
         size: "12x12",
         category: categories[9],
         tags: ["きらめく流星の家",units[1],getSer("ln")],
@@ -1672,7 +2208,7 @@ const furnitureData = [
     },
 
     {
-        name: "かがやくクローバーの家(仮)",
+        name: "かがやくクローバーの家",
         size: "12x12",
         category: categories[9],
         tags: ["かがやくクローバーの家",units[2],getSer("mmj")],
@@ -1680,7 +2216,7 @@ const furnitureData = [
     },
 
     {
-        name: "鮮やかなユニゾンの家(仮)",
+        name: "鮮やかなユニゾンの家",
         size: "12x12",
         category: categories[9],
         tags: ["鮮やかなユニゾンの家",units[3],getSer("vbs")],
@@ -1704,10 +2240,42 @@ const furnitureData = [
     },
 
     {
+        name: "はじまりのメロディの家",
+        size: "12x12",
+        category: categories[9],
+        tags: ["はじまりのメロディの家",units[0],getSer("vs")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
         name: "ナチュラルな家",
         size: "12x12",
         category: categories[9],
         tags: ["ナチュラルな家",getSer("Natural")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "天文学者の研究室の家",
+        size: "14x12",
+        category: categories[9],
+        tags: ["天文学者の研究室の家",getSer("Astronomer")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "月が見える旅館",
+        size: "12x12",
+        category: categories[9],
+        tags: ["月が見える旅館",getSer("Moon")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "旅人のキャンプのログハウス",
+        size: "12x14",
+        category: categories[9],
+        tags: ["旅人のキャンプのログハウス",getSer("Camp")],
         image: "images/kagayaku_clover_clock.png"
     },
 
