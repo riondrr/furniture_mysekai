@@ -31,50 +31,50 @@ const series = {
 /*
 
 {
-        name: "きらめく流星の床",
-        size: "-",
-        category: categories[7],
-        tags: ["きらめく流星の",units[1],getSer("ln")],
+        name: "きらめく流星のテーブルライト",
+        size: "1x1",
+        category: categories[1],
+        tags: ["きらめく流星のテーブルライト",units[1],getSer("ln")],
         image: "images/kagayaku_clover_clock.png"
     },
 
     {
-        name: "かがやくクローバーの床",
-        size: "-",
-        category: categories[7],
-        tags: ["かがやくクローバーの床",units[2],getSer("mmj")],
+        name: "かがやくクローバーのテーブルライト",
+        size: "1x1",
+        category: categories[1],
+        tags: ["かがやくクローバーのテーブルライト",units[2],getSer("mmj")],
         image: "images/kagayaku_clover_clock.png"
     },
 
     {
-        name: "鮮やかなユニゾンの床",
-        size: "-",
-        category: categories[7],
-        tags: ["鮮やかなユニゾンの床",units[3],getSer("vbs")],
+        name: "鮮やかなユニゾンのテーブルライト",
+        size: "1x1",
+        category: categories[1],
+        tags: ["鮮やかなユニゾンのテーブルライト",units[3],getSer("vbs")],
         image: "images/kagayaku_clover_clock.png"
     },
 
     {
-        name: "はじけるクラウンの床",
-        size: "-",
-        category: categories[7],
-        tags: ["はじけるクラウンの床",units[4],getSer("wxs")],
+        name: "はじけるクラウンのテーブルライト",
+        size: "1x1",
+        category: categories[1],
+        tags: ["はじけるクラウンのテーブルライト",units[4],getSer("wxs")],
         image: "images/kagayaku_clover_clock.png"
     },
 
     {
-        name: "ひび割れたハートの床",
-        size: "-",
-        category: categories[7],
-        tags: ["ひび割れたハートの床",units[5],getSer("ng")],
+        name: "ひび割れたハートのテーブルライト",
+        size: "1x1",
+        category: categories[1],
+        tags: ["ひび割れたハートのテーブルライト",units[5],getSer("ng")],
         image: "images/kagayaku_clover_clock.png"
     },
 
     {
-        name: "はじまりのメロディの床",
-        size: "-",
-        category: categories[7],
-        tags: ["はじまりのメロディの床",units[0],getSer("vs")],
+        name: "はじまりのメロディのテーブルライト",
+        size: "1x1",
+        category: categories[1],
+        tags: ["はじまりのメロディのテーブルライト",units[0],getSer("vs")],
         image: "images/kagayaku_clover_clock.png"
     },
 
