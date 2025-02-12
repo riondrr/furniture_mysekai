@@ -4,7 +4,7 @@ const series = {
     "Garden": "ガーデン",
     "Natural": "ナチュラル",
     "Simple": "シンプルポップキッチン",
-    "Clean": "クリーンパウダールーム",
+    "Clean": "クリーンパウダールーム",(garden,park)
     "Japanese": "素朴な和室",
     "Kids": "キッズルーム",
     "Casual": "カジュアル",
@@ -13,7 +13,7 @@ const series = {
     "Training": "トレーニングルーム",
     "Music": "音楽スタジオ",
     "Event": "イベント会場",
-    "Game": "ゲームセンター",
+    "Game": "ゲームセンター",(green)
     "Picnic": "ぽかぽかなピクニック",
     "Astronomer": "天文学者の研究室",
     "ln": "きらめく流星ルーム",
