@@ -1,5 +1,5 @@
 // カテゴリ配列
-const categories = ["一般", "小物", "壁掛け", "ディスプレイ", "ぬいぐるみ", "キャンバス", "壁", "床", "ラグ", "家", "道", "柵"];
+const categories = ["一般", "小物", "壁掛け", "ディスプレイ", "ぬいぐるみ", "キャンバス", "壁", "床", "ラグ", "家", "道", "カラータイル", "柵"];
 const units = ["バーチャル・シンガー","Leo/need", "MORE MORE JUMP！", "Vivid BAD SQUAD", "ワンダーランズ×ショウタイム", "25時、ナイトコードで。"];
 const series = {
    "Park": "公園",
@@ -25,7 +25,8 @@ const series = {
     "ng": "ひび割れたハートルーム",
     "vs": "はじまりのメロディルーム",
     "Moon": "月が見える旅館",
-    "Camp": "旅人のキャンプ"
+    "Camp": "旅人のキャンプ",
+    "tile": "カラータイル"
   };
 // キーワードでシリーズ名を取得する
 function getSer(keyword) {
@@ -3564,12 +3565,174 @@ const furnitureData = [
         image: "images/kagayaku_clover_clock.png"
     },
 
+ //カラータイル///////////////////////////////////////////////////////////
+
+ {
+    name: "カラータイル/レッド",
+    size: "2x2",
+    category: categories[11],
+    tags: [getSer("tile"),"カラータイル/レッド"],
+    image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/オレンジ",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/オレンジ"],
+   image: "images/kagayaku_clover_clock.png"
+},      
+
+{
+   name: "カラータイル/ライトオレンジ",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ライトオレンジ"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/イエロー",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/イエロー"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ライトグリーン",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ライトグリーン"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/グリーン",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/グリーン"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ブルーグリーン",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ブルーグリーン"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ライトブルー",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ライトブルー"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ブルー",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ブルー"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/バイオレット",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/バイオレット"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/パープル",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/パープル"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ピンク",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ピンク"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/クリーム",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/クリーム"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ベージュ",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ベージュ"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ライトブラウン",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ライトブラウン"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ブラウン",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ブラウン"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ホワイト",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ホワイト"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ライトグレー",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ライトグレー"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/グレー",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/グレー"],
+   image: "images/kagayaku_clover_clock.png"
+},   
+
+{
+   name: "カラータイル/ブラック",
+   size: "2x2",
+   category: categories[11],
+   tags: [getSer("tile"),"カラータイル/ブラック"],
+   image: "images/kagayaku_clover_clock.png"
+},
+
 //柵///////////////////////////////////////////////////////////
 
     {
         name: "シンプルな木の柵",
         size: "2x2",
-        category: categories[11],
+        category: categories[12],
         tags: ["シンプルな木の柵"],
         image: "images/kagayaku_clover_clock.png"
     },
@@ -3577,7 +3740,7 @@ const furnitureData = [
     {
         name: "洋風な木の柵",
         size: "2x2",
-        category: categories[11],
+        category: categories[12],
         tags: ["洋風な木の柵"],
         image: "images/kagayaku_clover_clock.png"
     },
@@ -3585,7 +3748,7 @@ const furnitureData = [
     {
         name: "アイアンのガーデニングフェンス",
         size: "2x2",
-        category: categories[11],
+        category: categories[12],
         tags: ["アイアンのガーデニングフェンス"],
         image: "images/kagayaku_clover_clock.png"
     },
@@ -3593,7 +3756,7 @@ const furnitureData = [
     {
         name: "生け垣",
         size: "2x2",
-        category: categories[11],
+        category: categories[12],
         tags: ["生け垣","グリーン"],
         image: "images/kagayaku_clover_clock.png"
     },
