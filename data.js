@@ -695,6 +695,14 @@ const furnitureData = [
     },
 
     {
+        name: "ガーデンのツールシェルフ",
+        size: "3x2",
+        category: categories[0],
+        tags: ["ガーデンのツールシェルフ",getSer("Garden")],
+        image: ""
+    },
+
+    {
         name: "ガーデンのステップラダー",
         size: "2x2",
         category: categories[0],
