@@ -26,7 +26,8 @@ const series = {
     "vs": "はじまりのメロディルーム",
     "Moon": "月が見える旅館",
     "Camp": "旅人のキャンプ",
-    "tile": "カラータイル"
+    "tile": "カラータイル",
+    "Thunder": "雷神祭"
 };
 // キーワードでシリーズ名を取得する
 function getSer(keyword) {
@@ -1167,14 +1168,6 @@ const furnitureData = [
     },
 
     {
-        name: "スタンドマイク",
-        size: "1x1",
-        category: categories[0],
-        tags: ["スタンドマイク", getSer("Music"), "楽器"],
-        image: ""
-    },
-
-    {
         name: "ドラムセット",
         size: "5x4",
         category: categories[0],
@@ -1187,6 +1180,14 @@ const furnitureData = [
         size: "2x2",
         category: categories[0],
         tags: ["アンプ", getSer("Music"), "楽器"],
+        image: ""
+    },
+
+    {
+        name: "スタンドマイク",
+        size: "1x1",
+        category: categories[0],
+        tags: ["スタンドマイク", getSer("Music"), "楽器"],
         image: ""
     },
 
@@ -1207,18 +1208,18 @@ const furnitureData = [
     },
 
     {
-        name: "ゲームセンターの椅子",
-        size: "2x2",
-        category: categories[0],
-        tags: ["ゲームセンターの椅子", getSer("Game")],
-        image: ""
-    },
-
-    {
         name: "クレーンゲーム",
         size: "7x4",
         category: categories[0],
         tags: ["クレーンゲーム", getSer("Game")],
+        image: ""
+    },
+
+    {
+        name: "ゲームセンターの椅子",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ゲームセンターの椅子", getSer("Game")],
         image: ""
     },
 
@@ -1550,6 +1551,86 @@ const furnitureData = [
         image: "image.png"
     },
 
+    {
+        name: "雷神祭の和太鼓",
+        size: "3x3",
+        category: categories[0],
+        tags: ["雷神祭の和太鼓", getSer("Thunder"),"楽器"],
+        image: ""
+    },
+
+    {
+        name: "雷神祭の提灯",
+        size: "5x2",
+        category: categories[0],
+        tags: ["雷神祭の提灯", getSer("Thunder")],
+        image: ""
+    },
+
+    {
+        name: "雷神祭のおめん屋台",
+        size: "不明",
+        category: categories[0],
+        tags: ["雷神祭のおめん屋台", getSer("Thunder")],
+        image: ""
+    },
+
+    {
+        name: "雷神祭のわたがし屋台",
+        size: "5x2",
+        category: categories[0],
+        tags: ["雷神祭のわたがし屋台", getSer("Thunder")],
+        image: ""
+    },
+
+    {
+        name: "雷神祭の灯篭",
+        size: "2x1",
+        category: categories[0],
+        tags: ["雷神祭の灯篭", getSer("Thunder"),"照明"],
+        image: ""
+    },
+
+    {
+        name: "雷神祭の池",
+        size: "8x12",
+        category: categories[0],
+        tags: ["雷神祭の池", getSer("Thunder")],
+        image: ""
+    },
+
+    {
+        name: "雷神祭の狐像/右向き",
+        size: "2x2",
+        category: categories[0],
+        tags: ["雷神祭の狐像/右向き", getSer("Thunder")],
+        image: ""
+    },
+
+    {
+        name: "雷神祭の鳥居",
+        size: "8x2",
+        category: categories[0],
+        tags: ["雷神祭の鳥居", getSer("Thunder")],
+        image: ""
+    },
+
+    {
+        name: "雷神祭の縁台",
+        size: "6x2",
+        category: categories[0],
+        tags: ["雷神祭の縁台", getSer("Thunder")],
+        image: ""
+    },
+
+    {
+        name: "雷神祭の狐像/左向き",
+        size: "2x2",
+        category: categories[0],
+        tags: ["雷神祭の狐像/左向き", getSer("Thunder")],
+        image: ""
+    },
+
     //小物///////////////////////////////////////////////////////////
 
 
@@ -1678,6 +1759,14 @@ const furnitureData = [
         size: "2x2",
         category: categories[1],
         tags: ["オーブンレンジ", getSer("Simple")],
+        image: "image.png"
+    },
+
+    {
+        name: "野菜バスケット",
+        size: "不明",
+        category: categories[1],
+        tags: ["野菜バスケット", getSer("Simple")],
         image: "image.png"
     },
 
@@ -2148,10 +2237,26 @@ const furnitureData = [
     },
 
     {
+        name: "キッチン吊戸棚",
+        size: "不明",
+        category: categories[2],
+        tags: ["キッチン吊戸棚", getSer("Simple")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
         name: "和風の素朴な窓",
         size: "4x3",
         category: categories[2],
         tags: ["和風の素朴な窓", getSer("Japanese")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "和風の素朴な掛け軸",
+        size: "2x4",
+        category: categories[2],
+        tags: ["和風の素朴な掛け軸", getSer("Japanese")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -2164,10 +2269,18 @@ const furnitureData = [
     },
 
     {
-        name: "和風の素朴な掛け軸",
-        size: "2x4",
+        name: "キッズルームのくまさん窓",
+        size: "4x3",
         category: categories[2],
-        tags: ["和風の素朴な掛け軸", getSer("Japanese")],
+        tags: ["キッズルームのくまさん窓", getSer("Kids")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "キッズルームの絵",
+        size: "3x2",
+        category: categories[2],
+        tags: ["キッズルームの絵", getSer("Kids")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -2192,22 +2305,6 @@ const furnitureData = [
         size: "1x2",
         category: categories[2],
         tags: ["カジュアルなリュック", getSer("Casual"), "タグ不明"],
-        image: "images/kagayaku_clover_clock.png"
-    },
-
-    {
-        name: "キッズルームのくまさん窓",
-        size: "4x3",
-        category: categories[2],
-        tags: ["キッズルームのくまさん窓", getSer("Kids")],
-        image: "images/kagayaku_clover_clock.png"
-    },
-
-    {
-        name: "キッズルームの絵",
-        size: "3x2",
-        category: categories[2],
-        tags: ["キッズルームの絵", getSer("Kids")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -3172,6 +3269,14 @@ const furnitureData = [
     },
 
     {
+        name: "シンプルポップキッチンの壁紙",
+        size: "-",
+        category: categories[6],
+        tags: ["シンプルポップキッチンの壁紙", getSer("Natural")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
         name: "クリーンパウダールームの壁紙",
         size: "-",
         category: categories[6],
@@ -3298,6 +3403,14 @@ const furnitureData = [
         size: "-",
         category: categories[7],
         tags: ["ナチュラルな床", getSer("Natural")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "シンプルポップキッチンの床",
+        size: "-",
+        category: categories[7],
+        tags: ["シンプルポップキッチンの床", getSer("Natural")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -3560,6 +3673,14 @@ const furnitureData = [
         size: "12x14",
         category: categories[9],
         tags: ["旅人のキャンプのログハウス", getSer("Camp")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "雷神祭の家",
+        size: "12x12",
+        category: categories[9],
+        tags: ["雷神祭の家", getSer("Thunder")],
         image: "images/kagayaku_clover_clock.png"
     },
 
