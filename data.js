@@ -27,7 +27,8 @@ const series = {
     "Moon": "月が見える旅館",
     "Camp": "旅人のキャンプ",
     "tile": "カラータイル",
-    "Thunder": "雷神祭"
+    "Thunder": "雷神祭",
+    "Sports":"スポーツ"
 };
 // キーワードでシリーズ名を取得する
 function getSer(keyword) {
@@ -496,6 +497,38 @@ const furnitureData = [
     },
 
     {
+        name: "岩",
+        size: "2x2",
+        category: categories[0],
+        tags: ["岩"],
+        image: "image.png"
+    },
+
+    {
+        name: "石",
+        size: "2x2",
+        category: categories[0],
+        tags: ["石"],
+        image: "image.png"
+    },
+
+    {
+        name: "草の生えた石",
+        size: "2x2",
+        category: categories[0],
+        tags: ["草の生えた石"],
+        image: "image.png"
+    },
+
+    {
+        name: "低木",
+        size: "2x2",
+        category: categories[0],
+        tags: ["低木","グリーン"],
+        image: "image.png"
+    },
+
+    {
         name: "ナチュラルなチェスト",
         size: "2x2",
         category: categories[0],
@@ -510,6 +543,30 @@ const furnitureData = [
         tags: ["ナチュラルなベッド", getSer("Natural")],
         image: ""
     },
+
+    {
+        name: "ナチュラルなフロアライト",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ナチュラルなフロアライト", getSer("Natural"),"照明"],
+        image: ""
+    },
+
+    {
+        name: "ナチュラルな2人掛けソファ",
+        size: "4x2",
+        category: categories[0],
+        tags: ["ナチュラルな2人掛けソファ", getSer("Natural")],
+        image: ""
+    },
+
+    {
+        name: "ナチュラルな1人掛けソファ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ナチュラルな1人掛けソファ", getSer("Natural")],
+        image: ""
+    },//
 
     {
         name: "ナチュラルなダイニングテーブル",
@@ -544,14 +601,6 @@ const furnitureData = [
     },
 
     {
-        name: "ナチュラルなフロアライト",
-        size: "2x2",
-        category: categories[0],
-        tags: ["ナチュラルなフロアライト", getSer("Natural")],
-        image: ""
-    },
-
-    {
         name: "ナチュラルなスツール",
         size: "2x2",
         category: categories[0],
@@ -572,22 +621,6 @@ const furnitureData = [
         size: "4x2",
         category: categories[0],
         tags: ["ナチュラルなローテーブル", getSer("Natural")],
-        image: ""
-    },
-
-    {
-        name: "ナチュラルな2人掛けソファ",
-        size: "4x2",
-        category: categories[0],
-        tags: ["ナチュラルな2人掛けソファ", getSer("Natural")],
-        image: ""
-    },
-
-    {
-        name: "ナチュラルな1人掛けソファ",
-        size: "2x2",
-        category: categories[0],
-        tags: ["ナチュラルな1人掛けソファ", getSer("Natural")],
         image: ""
     },
 
@@ -653,6 +686,14 @@ const furnitureData = [
         category: categories[0],
         tags: ["洗濯機", getSer("Clean")],
         image: ""
+    },//
+
+    {
+        name: "ハンディ掃除機",
+        size: "1x1",
+        category: categories[0],
+        tags: ["ハンディ掃除機",getSer("Clean")],
+        image: "image.png"
     },
 
     {
@@ -660,6 +701,30 @@ const furnitureData = [
         size: "2x1",
         category: categories[0],
         tags: ["ガーデンの素朴な花壇", getSer("Garden")],
+        image: ""
+    },
+
+    {
+        name: "ガーデンの素朴な花壇/ポピー",
+        size: "2x1",
+        category: categories[0],
+        tags: ["ガーデンの素朴な花壇/ポピー", getSer("Garden")],
+        image: ""
+    },
+
+    {
+        name: "ガーデンの素朴な花壇/コスモス",
+        size: "2x1",
+        category: categories[0],
+        tags: ["ガーデンの素朴な花壇/コスモス", getSer("Garden")],
+        image: ""
+    },
+
+    {
+        name: "ガーデンの素朴な花壇/ラベンダー",
+        size: "2x1",
+        category: categories[0],
+        tags: ["ガーデンの素朴な花壇/ラベンダー", getSer("Garden")],
         image: ""
     },
 
@@ -696,12 +761,68 @@ const furnitureData = [
     },
 
     {
+        name: "ガーデンのラティスプランター/ポピー",
+        size: "2x1",
+        category: categories[0],
+        tags: ["ガーデンのラティスプランター/ポピー", getSer("Garden")],
+        image: ""
+    },
+
+    {
+        name: "ガーデンのラティスプランター/コスモス",
+        size: "2x1",
+        category: categories[0],
+        tags: ["ガーデンのラティスプランター/コスモス", getSer("Garden")],
+        image: ""
+    },
+
+    {
+        name: "ガーデンのラティスプランター/ラベンダー",
+        size: "2x1",
+        category: categories[0],
+        tags: ["ガーデンのラティスプランター/ラベンダー", getSer("Garden")],
+        image: ""
+    },
+
+    {
         name: "ガーデンのツールシェルフ",
         size: "3x2",
         category: categories[0],
         tags: ["ガーデンのツールシェルフ", getSer("Garden")],
         image: ""
     },
+
+    {
+        name: "ガーデンカート",
+        size: "2x3",
+        category: categories[0],
+        tags: ["ガーデンカート", getSer("Garden")],
+        image: ""
+    },
+
+    {
+        name: "ガーデンカート/ポピー",
+        size: "2x3",
+        category: categories[0],
+        tags: ["ガーデンカート/ポピー", getSer("Garden")],
+        image: ""
+    },
+
+    {
+        name: "ガーデンカート/コスモス",
+        size: "2x3",
+        category: categories[0],
+        tags: ["ガーデンカート/コスモス", getSer("Garden")],
+        image: ""
+    },
+
+    {
+        name: "ガーデンカート/ラベンダー",
+        size: "2x3",
+        category: categories[0],
+        tags: ["ガーデンカート/ラベンダー", getSer("Garden")],
+        image: ""
+    },//
 
     {
         name: "ガーデンのステップラダー",
@@ -712,10 +833,10 @@ const furnitureData = [
     },
 
     {
-        name: "ガーデンカート",
-        size: "2x3",
+        name: "ブランコ",
+        size: "8x5",
         category: categories[0],
-        tags: ["ガーデンカート", getSer("Garden")],
+        tags: ["ブランコ", getSer("Park")],
         image: ""
     },
 
@@ -736,14 +857,6 @@ const furnitureData = [
     },
 
     {
-        name: "シーソー",
-        size: "6x2",
-        category: categories[0],
-        tags: ["シーソー", getSer("Park")],
-        image: ""
-    },
-
-    {
         name: "砂場",
         size: "5x5",
         category: categories[0],
@@ -752,10 +865,10 @@ const furnitureData = [
     },
 
     {
-        name: "ブランコ",
-        size: "8x5",
+        name: "シーソー",
+        size: "6x2",
         category: categories[0],
-        tags: ["ブランコ", getSer("Park")],
+        tags: ["シーソー", getSer("Park")],
         image: ""
     },
 
@@ -821,6 +934,14 @@ const furnitureData = [
         category: categories[0],
         tags: ["土管", getSer("Park")],
         image: ""
+    },//
+
+    {
+        name: "和風の素朴な鏡台",
+        size: "3x2",
+        category: categories[0],
+        tags: ["和風の素朴な鏡台", getSer("Japanese"),"アバターチェンジ"],
+        image: ""
     },
 
     {
@@ -861,21 +982,13 @@ const furnitureData = [
         category: categories[0],
         tags: ["和風の素朴な黒電話", getSer("Japanese")],
         image: ""
-    },
-
-    {
-        name: "和風の素朴な鏡台",
-        size: "1x2",
-        category: categories[0],
-        tags: ["和風の素朴な鏡台", getSer("Japanese")],
-        image: ""
-    },
+    },//
 
     {
         name: "キッズルームのカラフルチェスト",
         size: "2x2",
         category: categories[0],
-        tags: ["キッズルームのカラフルチェスト", getSer("Kids")],
+        tags: ["キッズルームのカラフルチェスト", getSer("Kids"),"チェスト"],
         image: ""
     },
 
@@ -889,7 +1002,7 @@ const furnitureData = [
 
     {
         name: "キッズルームのテーブル",
-        size: "4x2",
+        size: "3x3",
         category: categories[0],
         tags: ["キッズルームのテーブル", getSer("Kids")],
         image: ""
@@ -944,14 +1057,6 @@ const furnitureData = [
     },
 
     {
-        name: "カジュアルな学習机",
-        size: "4x3",
-        category: categories[0],
-        tags: ["カジュアルな学習机", getSer("Casual")],
-        image: "image.png"
-    },
-
-    {
         name: "カジュアルなベッド",
         size: "4x6",
         category: categories[0],
@@ -960,10 +1065,10 @@ const furnitureData = [
     },
 
     {
-        name: "カジュアルなハンガーラック",
-        size: "3x2",
+        name: "カジュアルな学習机",
+        size: "4x3",
         category: categories[0],
-        tags: ["カジュアルなハンガーラック", getSer("Casual")],
+        tags: ["カジュアルな学習机", getSer("Casual")],
         image: "image.png"
     },
 
@@ -972,6 +1077,22 @@ const furnitureData = [
         size: "2x2",
         category: categories[0],
         tags: ["カジュアルな本棚", getSer("Casual")],
+        image: "image.png"
+    },
+
+    {
+        name: "カジュアルなハンガーラック",
+        size: "3x2",
+        category: categories[0],
+        tags: ["カジュアルなハンガーラック", getSer("Casual")],
+        image: "image.png"
+    },//
+
+    {
+        name: "カジュアルな学習椅子",
+        size: "2x2",
+        category: categories[0],
+        tags: ["カジュアルな学習椅子", getSer("Casual")],
         image: "image.png"
     },
 
@@ -1056,18 +1177,18 @@ const furnitureData = [
     },
 
     {
-        name: "フレンチスタイルのラウンドテーブル",
-        size: "4x4",
-        category: categories[0],
-        tags: ["フレンチスタイルのラウンドテーブル", getSer("French")],
-        image: ""
-    },
-
-    {
         name: "フレンチスタイルのベッド",
         size: "4x6",
         category: categories[0],
         tags: ["フレンチスタイルのベッド", getSer("French")],
+        image: ""
+    },
+
+    {
+        name: "フレンチスタイルのラウンドテーブル",
+        size: "4x4",
+        category: categories[0],
+        tags: ["フレンチスタイルのラウンドテーブル", getSer("French")],
         image: ""
     },
 
@@ -1104,10 +1225,26 @@ const furnitureData = [
     },
 
     {
+        name: "ウォーターサーバー",
+        size: "1x1",
+        category: categories[0],
+        tags: ["ウォーターサーバー",getSer("Training")],
+        image: "image.png"
+    },
+
+    {
         name: "ヨガマット",
         size: "5x3",
         category: categories[0],
         tags: ["ヨガマット", getSer("Training")],
+        image: ""
+    },
+
+    {
+        name: "バランスボール",
+        size: "2x2",
+        category: categories[0],
+        tags: ["バランスボール", getSer("Training")],
         image: ""
     },
 
@@ -1192,18 +1329,18 @@ const furnitureData = [
     },
 
     {
-        name: "折りたたみ会議テーブル",
-        size: "4x2",
-        category: categories[0],
-        tags: ["折りたたみ会議テーブル", getSer("Event")],
-        image: ""
-    },
-
-    {
         name: "ホワイトボード",
         size: "4x2",
         category: categories[0],
         tags: ["ホワイトボード", getSer("Event")],
+        image: ""
+    },//
+
+    {
+        name: "折りたたみ会議テーブル",
+        size: "4x2",
+        category: categories[0],
+        tags: ["折りたたみ会議テーブル", getSer("Event")],
         image: ""
     },
 
@@ -1237,7 +1374,7 @@ const furnitureData = [
         category: categories[0],
         tags: ["CHUNITHM", getSer("Game")],
         image: ""
-    },
+    },//
 
     {
         name: "ぷよぷよeスポーツ",
@@ -1312,58 +1449,10 @@ const furnitureData = [
     },
 
     {
-        name: "天文学者の研究室のチェスト",
-        size: "2x2",
-        category: categories[0],
-        tags: ["天文学者の研究室のチェスト", getSer("Astronomer")],
-        image: ""
-    },
-
-    {
-        name: "天文学者の研究室の天体望遠鏡",
-        size: "2x3",
-        category: categories[0],
-        tags: ["天文学者の研究室の天体望遠鏡", getSer("Astronomer")],
-        image: ""
-    },
-
-    {
-        name: "天文学者の研究室の天蓋つきベッド",
-        size: "4x7",
-        category: categories[0],
-        tags: ["天文学者の研究室の天蓋つきベッド", getSer("Astronomer")],
-        image: ""
-    },
-
-    {
-        name: "天文学者の研究室の巻紙入りの箱",
-        size: "1x1",
-        category: categories[0],
-        tags: ["天文学者の研究室の巻紙入りの箱", getSer("Astronomer")],
-        image: ""
-    },
-
-    {
-        name: "天文学者の研究室の机",
-        size: "4x2",
-        category: categories[0],
-        tags: ["天文学者の研究室の机", getSer("Astronomer")],
-        image: ""
-    },
-
-    {
-        name: "天文学者の研究室の椅子",
-        size: "2x2",
-        category: categories[0],
-        tags: ["天文学者の研究室の椅子", getSer("Astronomer")],
-        image: ""
-    },
-
-    {
         name: "月が見える旅館の用箪笥",
         size: "2x2",
         category: categories[0],
-        tags: ["月が見える旅館の用箪笥", getSer("Moon"), "アバターチェンジ"],
+        tags: ["月が見える旅館の用箪笥", getSer("Moon"), "チェスト"],
         image: ""
     },
 
@@ -1403,7 +1492,7 @@ const furnitureData = [
         name: "月が見える旅館の行灯",
         size: "1x1",
         category: categories[0],
-        tags: ["月が見える旅館の行灯", getSer("Moon")],
+        tags: ["月が見える旅館の行灯", getSer("Moon"),"照明"],
         image: ""
     },
 
@@ -1413,142 +1502,6 @@ const furnitureData = [
         category: categories[0],
         tags: ["月が見える旅館の屏風", getSer("Moon")],
         image: ""
-    },
-
-    {
-        name: "旅人のキャンプのテント",
-        size: "6x6",
-        category: categories[0],
-        tags: ["旅人のキャンプのテント", getSer("Camp")],
-        image: ""
-    },
-
-    {
-        name: "旅人の焚き火料理",
-        size: "3x3",
-        category: categories[0],
-        tags: ["旅人の焚き火料理", getSer("Camp")],
-        image: ""
-    },
-
-    {
-        name: "旅人のキャンプのリュック",
-        size: "2x2",
-        category: categories[0],
-        tags: ["旅人のキャンプのリュック", getSer("Camp")],
-        image: ""
-    },
-
-    {
-        name: "旅人のキャンプのアウトドアチェア",
-        size: "2x2",
-        category: categories[0],
-        tags: ["旅人のキャンプのアウトドアチェア", getSer("Camp")],
-        image: ""
-    },
-
-    {
-        name: "旅人のキャンプの薪",
-        size: "2x1",
-        category: categories[0],
-        tags: ["旅人のキャンプの薪", getSer("Camp")],
-        image: ""
-    },
-
-    {
-        name: "旅人のキャンプの雪だるま",
-        size: "2x2",
-        category: categories[0],
-        tags: ["旅人のキャンプの雪だるま", getSer("Camp")],
-        image: ""
-    },
-
-    {
-        name: "旅人のキャンプのアウトドアテーブル",
-        size: "4x2",
-        category: categories[0],
-        tags: ["旅人のキャンプのアウトドアテーブル", getSer("Camp")],
-        image: ""
-    },
-
-    {
-        name: "旅人のキャンプのアウトドアボックス",
-        size: "3x1",
-        category: categories[0],
-        tags: ["旅人のキャンプのアウトドアボックス", getSer("Camp")],
-        image: ""
-    },
-
-    {
-        name: "あの日のジャングルジム",
-        size: "5x5",
-        category: categories[0],
-        tags: ["あの日のジャングルジム", units[1]],
-        image: "image.png"
-    },
-
-    {
-        name: "配信用カメラ",
-        size: "2x2",
-        category: categories[0],
-        tags: ["配信用カメラ", units[2]],
-        image: "image.png"
-    },
-
-    {
-        name: "ぷよぷよ通",
-        size: "6x5",
-        category: categories[0],
-        tags: ["ぷよぷよ通", units[3]],
-        image: "image.png"
-    },
-
-    {
-        name: "ネネロボのオブジェ",
-        size: "2x2",
-        category: categories[0],
-        tags: ["ネネロボのオブジェ", units[4]],
-        image: "image.png"
-    },
-
-    {
-        name: "いつものファミレス席",
-        size: "7x5",
-        category: categories[0],
-        tags: ["いつものファミレス席", units[5]],
-        image: "image.png"
-    },
-
-    {
-        name: "ハンディ掃除機",
-        size: "1x1",
-        category: categories[0],
-        tags: ["ハンディ掃除機"],
-        image: "image.png"
-    },
-
-    {
-        name: "ウォーターサーバー",
-        size: "1x1",
-        category: categories[0],
-        tags: ["ウォーターサーバー"],
-        image: "image.png"
-    },
-
-    {
-        name: "岩",
-        size: "2x2",
-        category: categories[0],
-        tags: ["岩"],
-        image: "image.png"
-    },
-
-    {
-        name: "低木",
-        size: "2x2",
-        category: categories[0],
-        tags: ["低木","グリーン"],
-        image: "image.png"
     },
 
     {
@@ -1569,7 +1522,7 @@ const furnitureData = [
 
     {
         name: "雷神祭のおめん屋台",
-        size: "不明",
+        size: "5x2",
         category: categories[0],
         tags: ["雷神祭のおめん屋台", getSer("Thunder")],
         image: ""
@@ -1628,6 +1581,214 @@ const furnitureData = [
         size: "2x2",
         category: categories[0],
         tags: ["雷神祭の狐像/左向き", getSer("Thunder")],
+        image: ""
+    },
+
+    {
+        name: "天文学者の研究室のチェスト",
+        size: "2x2",
+        category: categories[0],
+        tags: ["天文学者の研究室のチェスト", getSer("Astronomer"),"チェスト"],
+        image: ""
+    },
+
+    {
+        name: "天文学者の研究室の天体望遠鏡",
+        size: "2x3",
+        category: categories[0],
+        tags: ["天文学者の研究室の天体望遠鏡", getSer("Astronomer")],
+        image: ""
+    },
+
+    {
+        name: "天文学者の研究室の天蓋つきベッド",
+        size: "4x7",
+        category: categories[0],
+        tags: ["天文学者の研究室の天蓋つきベッド", getSer("Astronomer")],
+        image: ""
+    },
+
+    {
+        name: "天文学者の研究室の椅子",
+        size: "2x2",
+        category: categories[0],
+        tags: ["天文学者の研究室の椅子", getSer("Astronomer")],
+        image: ""
+    },
+
+    {
+        name: "天文学者の研究室の巻紙入りの箱",
+        size: "1x1",
+        category: categories[0],
+        tags: ["天文学者の研究室の巻紙入りの箱", getSer("Astronomer")],
+        image: ""
+    },//
+
+    {
+        name: "天文学者の研究室の机",
+        size: "4x2",
+        category: categories[0],
+        tags: ["天文学者の研究室の机", getSer("Astronomer")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプのテント",
+        size: "6x6",
+        category: categories[0],
+        tags: ["旅人のキャンプのテント", getSer("Camp")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプのアウトドアチェア",
+        size: "2x2",
+        category: categories[0],
+        tags: ["旅人のキャンプのアウトドアチェア", getSer("Camp")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプの薪",
+        size: "2x1",
+        category: categories[0],
+        tags: ["旅人のキャンプの薪", getSer("Camp")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプの雪だるま",
+        size: "2x2",
+        category: categories[0],
+        tags: ["旅人のキャンプの雪だるま", getSer("Camp")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプのアウトドアボックス",
+        size: "3x1",
+        category: categories[0],
+        tags: ["旅人のキャンプのアウトドアボックス", getSer("Camp")],
+        image: ""
+    },//
+
+    {
+        name: "旅人の焚き火料理",
+        size: "3x3",
+        category: categories[0],
+        tags: ["旅人の焚き火料理", getSer("Camp")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプのリュック",
+        size: "2x2",
+        category: categories[0],
+        tags: ["旅人のキャンプのリュック", getSer("Camp")],
+        image: ""
+    },
+
+    {
+        name: "旅人のキャンプのアウトドアテーブル",
+        size: "4x2",
+        category: categories[0],
+        tags: ["旅人のキャンプのアウトドアテーブル", getSer("Camp")],
+        image: ""
+    },
+
+    {
+        name: "あの日のジャングルジム",
+        size: "5x5",
+        category: categories[0],
+        tags: ["あの日のジャングルジム", units[1]],
+        image: "image.png"
+    },
+
+    {
+        name: "配信用カメラ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["配信用カメラ", units[2]],
+        image: "image.png"
+    },
+
+    {
+        name: "ぷよぷよ通",
+        size: "6x5",
+        category: categories[0],
+        tags: ["ぷよぷよ通", units[3]],
+        image: "image.png"
+    },
+
+    {
+        name: "ネネロボのオブジェ",
+        size: "2x2",
+        category: categories[0],
+        tags: ["ネネロボのオブジェ", units[4]],
+        image: "image.png"
+    },
+
+    {
+        name: "いつものファミレス席",
+        size: "7x5",
+        category: categories[0],
+        tags: ["いつものファミレス席", units[5]],
+        image: "image.png"
+    },
+
+    {
+        name: "サッカーボール",
+        size: "1x1",
+        category: categories[0],
+        tags: ["サッカーボール", getSer("Sports")],
+        image: ""
+    },
+
+    {
+        name: "バスケットボール",
+        size: "1x1",
+        category: categories[0],
+        tags: ["バスケットボール", getSer("Sports")],
+        image: ""
+    },
+
+    {
+        name: "テニスラケットバッグ",
+        size: "不明",
+        category: categories[0],
+        tags: ["テニスラケットバッグ", getSer("Sports")],
+        image: ""
+    },
+
+    {
+        name: "卓球台",
+        size: "4x6",
+        category: categories[0],
+        tags: ["卓球台", getSer("Sports")],
+        image: ""
+    },
+
+    {
+        name: "バドミントンラケット",
+        size: "不明",
+        category: categories[0],
+        tags: ["バドミントンラケット", getSer("Sports")],
+        image: ""
+    },
+
+    {
+        name: "野球バットとグローブ",
+        size: "2x1",
+        category: categories[0],
+        tags: ["野球バットとグローブ", getSer("Sports")],
+        image: ""
+    },
+
+    {
+        name: "グランドライト",
+        size: "1x1",
+        category: categories[0],
+        tags: ["グランドライト", "照明"],
         image: ""
     },
 
@@ -1707,6 +1868,14 @@ const furnitureData = [
     },
 
     {
+        name: "蓄音機",
+        size: "2x2",
+        category: categories[1],
+        tags: ["蓄音機","ミュージックプレイヤー"],
+        image: "image.png"
+    },
+
+    {
         name: "シンプルなノートパソコン",
         size: "2x2",
         category: categories[1],
@@ -1764,9 +1933,25 @@ const furnitureData = [
 
     {
         name: "野菜バスケット",
-        size: "不明",
+        size: "1x1",
         category: categories[1],
         tags: ["野菜バスケット", getSer("Simple")],
+        image: "image.png"
+    },//
+
+    {
+        name: "歯ブラシとコップ",
+        size: "1x1",
+        category: categories[1],
+        tags: ["歯ブラシとコップ",getSer("Clean")],
+        image: "image.png"
+    },
+
+    {
+        name: "ドライヤー",
+        size: "1x1",
+        category: categories[1],
+        tags: ["ドライヤー",getSer("Clean")],
         image: "image.png"
     },
 
@@ -1851,14 +2036,6 @@ const furnitureData = [
     },
 
     {
-        name: "カジュアルな読みかけの漫画",
-        size: "2x2",
-        category: categories[1],
-        tags: ["カジュアルな読みかけの漫画", getSer("Casual")],
-        image: "image.png"
-    },
-
-    {
         name: "カジュアルな携帯ゲーム機",
         size: "1x1",
         category: categories[1],
@@ -1879,6 +2056,14 @@ const furnitureData = [
         size: "1x1",
         category: categories[1],
         tags: ["カジュアルな目覚まし時計", getSer("Casual")],
+        image: "image.png"
+    },//
+
+    {
+        name: "カジュアルな読みかけの漫画",
+        size: "2x2",
+        category: categories[1],
+        tags: ["カジュアルな読みかけの漫画", getSer("Casual")],
         image: "image.png"
     },
 
@@ -1928,13 +2113,29 @@ const furnitureData = [
         category: categories[1],
         tags: ["フレンチスタイルのティーセット", getSer("French")],
         image: "image.png"
-    },
+    },//
 
     {
         name: "フレンチスタイルのファッション誌",
         size: "2x2",
         category: categories[1],
         tags: ["フレンチスタイルのファッション誌", getSer("French")],
+        image: "image.png"
+    },
+
+    {
+        name: "腹筋ローラー",
+        size: "2x1",
+        category: categories[1],
+        tags: ["腹筋ローラー",getSer("Training")],
+        image: "image.png"
+    },
+
+    {
+        name: "ヘッドホン",
+        size: "2x2",
+        category: categories[1],
+        tags: ["ヘッドホン",getSer("Music")],
         image: "image.png"
     },
 
@@ -1947,20 +2148,36 @@ const furnitureData = [
     },
 
     {
-        name: "エケベリア",
-        size: "1x1",
-        category: categories[1],
-        tags: ["エケベリア", "グリーン"],
-        image: "image.png"
-    },
-
-    {
         name: "ぽかぽかなピクニックのサンドイッチボックス",
         size: "1x1",
         category: categories[1],
         tags: ["ぽかぽかなピクニックのサンドイッチボックス", getSer("Picnic")],
         image: "image.png"
     },
+
+    {
+        name: "ぽかぽかなピクニックのバスケット",
+        size: "1x1",
+        category: categories[1],
+        tags: ["ぽかぽかなピクニックのバスケット", getSer("Picnic")],
+        image: "image.png"
+    },
+
+    {
+        name: "ぽかぽかなピクニックのお弁当箱",
+        size: "2x2",
+        category: categories[1],
+        tags: ["ぽかぽかなピクニックのお弁当箱", getSer("Picnic")],
+        image: "image.png"
+    },
+
+    {
+        name: "ぽかぽかなピクニックの水筒",
+        size: "1x1",
+        category: categories[1],
+        tags: ["ぽかぽかなピクニックの水筒", getSer("Picnic")],
+        image: "image.png"
+    },//
 
     {
         name: "ぽかぽかなピクニックのフルーツジュース瓶",
@@ -1979,26 +2196,26 @@ const furnitureData = [
     },
 
     {
-        name: "ぽかぽかなピクニックのお弁当箱",
-        size: "2x2",
+        name: "月が見える旅館の盆栽",
+        size: "2x1",
         category: categories[1],
-        tags: ["ぽかぽかなピクニックのお弁当箱", getSer("Picnic")],
+        tags: ["月が見える旅館の盆栽", getSer("Moon"), "グリーン"],
+        image: "image.png"
+    },//
+
+    {
+        name: "月が見える旅館の花瓶",
+        size: "1x1",
+        category: categories[1],
+        tags: ["月が見える旅館の花瓶", getSer("Moon")],
         image: "image.png"
     },
 
     {
-        name: "ぽかぽかなピクニックの水筒",
+        name: "天文学者の研究室の鏡",
         size: "1x1",
         category: categories[1],
-        tags: ["ぽかぽかなピクニックの水筒", getSer("Picnic")],
-        image: "image.png"
-    },
-
-    {
-        name: "ぽかぽかなピクニックのバスケット",
-        size: "1x1",
-        category: categories[1],
-        tags: ["ぽかぽかなピクニックのバスケット", getSer("Picnic")],
+        tags: ["天文学者の研究室の鏡", getSer("Astronomer"),"アバターチェンジ"],
         image: "image.png"
     },
 
@@ -2016,37 +2233,13 @@ const furnitureData = [
         category: categories[1],
         tags: ["天文学者の研究室のテーブルライト", getSer("Astronomer"), "照明"],
         image: "image.png"
-    },
-
-    {
-        name: "天文学者の研究室の鏡",
-        size: "1x1",
-        category: categories[1],
-        tags: ["天文学者の研究室の鏡", getSer("Astronomer")],
-        image: "image.png"
-    },
+    },//
 
     {
         name: "天文学者の研究室の積み重なった本",
         size: "1x1",
         category: categories[1],
         tags: ["天文学者の研究室の積み重なった本", getSer("Astronomer")],
-        image: "image.png"
-    },
-
-    {
-        name: "月が見える旅館の盆栽",
-        size: "2x1",
-        category: categories[1],
-        tags: ["月が見える旅館の盆栽", getSer("Moon"), "グリーン"],
-        image: "image.png"
-    },
-
-    {
-        name: "月が見える旅館の花瓶",
-        size: "1x1",
-        category: categories[1],
-        tags: ["月が見える旅館の花瓶", getSer("Moon")],
         image: "image.png"
     },
 
@@ -2067,42 +2260,18 @@ const furnitureData = [
     },
 
     {
-        name: "蓄音機",
-        size: "2x2",
-        category: categories[1],
-        tags: ["蓄音機"],
-        image: "image.png"
-    },
-
-    {
-        name: "ドライヤー",
+        name: "エケベリア",
         size: "1x1",
         category: categories[1],
-        tags: ["ドライヤー"],
+        tags: ["エケベリア", "グリーン"],
         image: "image.png"
     },
 
     {
-        name: "ヘッドホン",
-        size: "2x2",
+        name: "ASTRO FESジオラマ あんスタver.",
+        size: "4x2",
         category: categories[1],
-        tags: ["ヘッドホン"],
-        image: "image.png"
-    },
-
-    {
-        name: "歯ブラシとコップ",
-        size: "1x1",
-        category: categories[1],
-        tags: ["歯ブラシとコップ"],
-        image: "image.png"
-    },
-
-    {
-        name: "腹筋ローラー",
-        size: "2x1",
-        category: categories[1],
-        tags: ["腹筋ローラー"],
+        tags: ["ASTRO FESジオラマ あんスタver.", "コラボ","あんさんぶるスターズ！！コラボ"],
         image: "image.png"
     },
 
@@ -2234,11 +2403,11 @@ const furnitureData = [
         category: categories[2],
         tags: ["キッチンツールフック", getSer("Simple")],
         image: "images/kagayaku_clover_clock.png"
-    },
+    },//
 
     {
         name: "キッチン吊戸棚",
-        size: "不明",
+        size: "3x2",
         category: categories[2],
         tags: ["キッチン吊戸棚", getSer("Simple")],
         image: "images/kagayaku_clover_clock.png"
@@ -2296,7 +2465,7 @@ const furnitureData = [
         name: "カジュアルなポスター",
         size: "2x2",
         category: categories[2],
-        tags: ["カジュアルなポスター", getSer("Casual"), "タグ不明"],
+        tags: ["カジュアルなポスター", getSer("Casual")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -2304,7 +2473,7 @@ const furnitureData = [
         name: "カジュアルなリュック",
         size: "1x2",
         category: categories[2],
-        tags: ["カジュアルなリュック", getSer("Casual"), "タグ不明"],
+        tags: ["カジュアルなリュック", getSer("Casual")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -3333,18 +3502,18 @@ const furnitureData = [
     },
 
     {
-        name: "天文学者の研究室の壁紙",
-        size: "-",
-        category: categories[6],
-        tags: ["天文学者の研究室の壁紙", getSer("Astronomer")],
-        image: "images/kagayaku_clover_clock.png"
-    },
-
-    {
         name: "月が見える旅館の壁紙",
         size: "-",
         category: categories[6],
         tags: ["月が見える旅館の壁紙", getSer("Moon")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "天文学者の研究室の壁紙",
+        size: "-",
+        category: categories[6],
+        tags: ["天文学者の研究室の壁紙", getSer("Astronomer")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -3423,6 +3592,14 @@ const furnitureData = [
     },
 
     {
+        name: "和風の素朴な畳",
+        size: "-",
+        category: categories[7],
+        tags: ["和風の素朴な畳", getSer("Japanese")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
         name: "キッズルームの床",
         size: "-",
         category: categories[7],
@@ -3454,7 +3631,6 @@ const furnitureData = [
         image: "images/kagayaku_clover_clock.png"
     },
 
-
     {
         name: "スタジオの床",
         size: "-",
@@ -3464,10 +3640,10 @@ const furnitureData = [
     },
 
     {
-        name: "和風の素朴な畳",
+        name: "月が見える旅館の畳",
         size: "-",
         category: categories[7],
-        tags: ["和風の素朴な畳", getSer("Japanese")],
+        tags: ["月が見える旅館の畳", getSer("Moon")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -3476,14 +3652,6 @@ const furnitureData = [
         size: "-",
         category: categories[7],
         tags: ["天文学者の研究室の床", getSer("Astronomer")],
-        image: "images/kagayaku_clover_clock.png"
-    },
-
-    {
-        name: "月が見える旅館の畳",
-        size: "-",
-        category: categories[7],
-        tags: ["月が見える旅館の畳", getSer("Moon")],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -3538,6 +3706,22 @@ const furnitureData = [
     },
 
     {
+        name: "足ふきマット",
+        size: "2x2",
+        category: categories[8],
+        tags: ["足ふきマット",getSer("Clean")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "カジュアルなチェッカー柄ラグ",
+        size: "8x8",
+        category: categories[8],
+        tags: ["カジュアルなチェッカー柄ラグ", getSer("Casual")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
         name: "キュートなラグ",
         size: "6x6",
         category: categories[8],
@@ -3554,26 +3738,10 @@ const furnitureData = [
     },
 
     {
-        name: "カジュアルなチェッカー柄ラグ",
-        size: "8x8",
-        category: categories[8],
-        tags: ["カジュアルなチェッカー柄ラグ", getSer("Casual")],
-        image: "images/kagayaku_clover_clock.png"
-    },
-
-    {
         name: "ぽかぽかなピクニックのレジャーシート",
         size: "7x5",
         category: categories[8],
         tags: ["ぽかぽかなピクニックのレジャーシート", getSer("Picnic")],
-        image: "images/kagayaku_clover_clock.png"
-    },
-
-    {
-        name: "足ふきマット",
-        size: "2x2",
-        category: categories[8],
-        tags: ["足ふきマット"],
         image: "images/kagayaku_clover_clock.png"
     },
 
@@ -3653,18 +3821,18 @@ const furnitureData = [
     },
 
     {
-        name: "天文学者の研究室の家",
-        size: "14x12",
-        category: categories[9],
-        tags: ["天文学者の研究室の家", getSer("Astronomer")],
-        image: "images/kagayaku_clover_clock.png"
-    },
-
-    {
         name: "月が見える旅館",
         size: "12x12",
         category: categories[9],
         tags: ["月が見える旅館", getSer("Moon")],
+        image: "images/kagayaku_clover_clock.png"
+    },
+
+    {
+        name: "天文学者の研究室の家",
+        size: "14x12",
+        category: categories[9],
+        tags: ["天文学者の研究室の家", getSer("Astronomer")],
         image: "images/kagayaku_clover_clock.png"
     },
 
